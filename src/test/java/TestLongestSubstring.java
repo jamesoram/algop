@@ -9,48 +9,48 @@ public class TestLongestSubstring {
     @Test
     void emptyString() {
         assertEquals(0,
-                ss.lengthOfLongestSubstring(""));
+                ss.solution1(""));
     }
 
     @Test
     void noRepeatingCharacters() {
         assertEquals(4,
-                ss.lengthOfLongestSubstring("absc"));
+                ss.solution1("absc"));
     }
 
     @Test
     void threeRepeatedLetters() {
         assertEquals(3,
-                ss.lengthOfLongestSubstring("abcabcbb"));
+                ss.solution1("abcabcbb"));
     }
 
     @Test
     void sameCharManyTimes() {
         assertEquals(1,
-                ss.lengthOfLongestSubstring("bbbbb"));
+                ss.solution1("bbbbb"));
     }
 
     @Test
     void garbled() {
         assertEquals(3,
-                ss.lengthOfLongestSubstring("pwwkew"));
+                ss.solution1("pwwkew"));
     }
 
     @Test
     void simpleAAB() {
         assertEquals(2,
-                ss.lengthOfLongestSubstring("aab"));
+                ss.solution1("aab"));
     }
 
     @Test
     void simpleDVDF() {
         assertEquals(3,
-                ss.lengthOfLongestSubstring("dvdf"));
+                ss.solution1("dvdf"));
     }
 
     @Test
     void moreGarbled() {
         assertEquals(5,
-                ss.lengthOfLongestSubstring("qrsvbspk"));
+                ss.solution1("qrsvbspk"));
     }
 }
